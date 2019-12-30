@@ -1,0 +1,314 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.netease.nim.uikit"
+4    android:versionCode="66"
+5    android:versionName="6.5.5" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->G:\utilks\pdd\uikit\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->G:\utilks\pdd\uikit\AndroidManifest.xml
+10
+11    <application>
+11-->G:\utilks\pdd\uikit\AndroidManifest.xml:5:5-169:19
+12        <meta-data
+12-->G:\utilks\pdd\uikit\AndroidManifest.xml:7:9-9:42
+13            android:name="com.netease.nim.uikit.support.glide.NIMGlideModule"
+13-->G:\utilks\pdd\uikit\AndroidManifest.xml:8:13-78
+14            android:value="GlideModule" />
+14-->G:\utilks\pdd\uikit\AndroidManifest.xml:9:13-40
+15
+16        <!-- 会话窗口 -->
+17        <!--
+18             UI组件中包含了语音选文字功能，该界面是全屏显示，为了视觉上的美观，该界面主题ActionBar使用Overlay模式。
+19             如果开发者不需要该功能或效果，使用普通主题即可。 同时，还需要将message_activity.xml这个layout中的根节点的paddingTop去掉。
+20        -->
+21        <activity
+21-->G:\utilks\pdd\uikit\AndroidManifest.xml:14:9-19:70
+22            android:name="com.netease.nim.uikit.business.session.activity.P2PMessageActivity"
+22-->G:\utilks\pdd\uikit\AndroidManifest.xml:15:13-94
+23            android:configChanges="keyboardHidden|orientation"
+23-->G:\utilks\pdd\uikit\AndroidManifest.xml:16:13-63
+24            android:screenOrientation="portrait"
+24-->G:\utilks\pdd\uikit\AndroidManifest.xml:17:13-49
+25            android:theme="@style/AppTheme.NoActionBar"
+25-->G:\utilks\pdd\uikit\AndroidManifest.xml:18:13-56
+26            android:windowSoftInputMode="stateHidden|adjustResize" />
+26-->G:\utilks\pdd\uikit\AndroidManifest.xml:19:13-67
+27        <activity
+27-->G:\utilks\pdd\uikit\AndroidManifest.xml:20:9-25:70
+28            android:name="com.netease.nim.uikit.business.session.activity.TeamMessageActivity"
+28-->G:\utilks\pdd\uikit\AndroidManifest.xml:21:13-95
+29            android:configChanges="keyboardHidden|orientation"
+29-->G:\utilks\pdd\uikit\AndroidManifest.xml:22:13-63
+30            android:screenOrientation="portrait"
+30-->G:\utilks\pdd\uikit\AndroidManifest.xml:23:13-49
+31            android:theme="@style/AppTheme.NoActionBar"
+31-->G:\utilks\pdd\uikit\AndroidManifest.xml:24:13-56
+32            android:windowSoftInputMode="stateHidden|adjustResize" />
+32-->G:\utilks\pdd\uikit\AndroidManifest.xml:25:13-67
+33
+34        <!-- 群聊 -->
+35        <activity
+35-->G:\utilks\pdd\uikit\AndroidManifest.xml:28:9-33:70
+36            android:name="com.netease.nim.uikit.business.team.activity.NormalTeamInfoActivity"
+36-->G:\utilks\pdd\uikit\AndroidManifest.xml:29:13-95
+37            android:configChanges="keyboardHidden|orientation"
+37-->G:\utilks\pdd\uikit\AndroidManifest.xml:30:13-63
+38            android:screenOrientation="portrait"
+38-->G:\utilks\pdd\uikit\AndroidManifest.xml:31:13-49
+39            android:theme="@style/AppTheme.NoActionBar"
+39-->G:\utilks\pdd\uikit\AndroidManifest.xml:32:13-56
+40            android:windowSoftInputMode="stateHidden|adjustResize" />
+40-->G:\utilks\pdd\uikit\AndroidManifest.xml:33:13-67
+41        <activity
+41-->G:\utilks\pdd\uikit\AndroidManifest.xml:34:9-39:70
+42            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamInfoActivity"
+42-->G:\utilks\pdd\uikit\AndroidManifest.xml:35:13-97
+43            android:configChanges="keyboardHidden|orientation"
+43-->G:\utilks\pdd\uikit\AndroidManifest.xml:36:13-63
+44            android:screenOrientation="portrait"
+44-->G:\utilks\pdd\uikit\AndroidManifest.xml:37:13-49
+45            android:theme="@style/AppTheme.NoActionBar"
+45-->G:\utilks\pdd\uikit\AndroidManifest.xml:38:13-56
+46            android:windowSoftInputMode="stateHidden|adjustResize" />
+46-->G:\utilks\pdd\uikit\AndroidManifest.xml:39:13-67
+47        <activity
+47-->G:\utilks\pdd\uikit\AndroidManifest.xml:40:9-45:70
+48            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberActivity"
+48-->G:\utilks\pdd\uikit\AndroidManifest.xml:41:13-99
+49            android:configChanges="keyboardHidden|orientation"
+49-->G:\utilks\pdd\uikit\AndroidManifest.xml:42:13-63
+50            android:screenOrientation="portrait"
+50-->G:\utilks\pdd\uikit\AndroidManifest.xml:43:13-49
+51            android:theme="@style/AppTheme.NoActionBar"
+51-->G:\utilks\pdd\uikit\AndroidManifest.xml:44:13-56
+52            android:windowSoftInputMode="stateHidden|adjustResize" />
+52-->G:\utilks\pdd\uikit\AndroidManifest.xml:45:13-67
+53        <activity
+53-->G:\utilks\pdd\uikit\AndroidManifest.xml:46:9-51:70
+54            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamAnnounceActivity"
+54-->G:\utilks\pdd\uikit\AndroidManifest.xml:47:13-101
+55            android:configChanges="keyboardHidden|orientation"
+55-->G:\utilks\pdd\uikit\AndroidManifest.xml:48:13-63
+56            android:screenOrientation="portrait"
+56-->G:\utilks\pdd\uikit\AndroidManifest.xml:49:13-49
+57            android:theme="@style/AppTheme.NoActionBar"
+57-->G:\utilks\pdd\uikit\AndroidManifest.xml:50:13-56
+58            android:windowSoftInputMode="stateHidden|adjustResize" />
+58-->G:\utilks\pdd\uikit\AndroidManifest.xml:51:13-67
+59        <activity
+59-->G:\utilks\pdd\uikit\AndroidManifest.xml:52:9-57:70
+60            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberInfoActivity"
+60-->G:\utilks\pdd\uikit\AndroidManifest.xml:53:13-103
+61            android:configChanges="keyboardHidden|orientation"
+61-->G:\utilks\pdd\uikit\AndroidManifest.xml:54:13-63
+62            android:screenOrientation="portrait"
+62-->G:\utilks\pdd\uikit\AndroidManifest.xml:55:13-49
+63            android:theme="@style/AppTheme.NoActionBar"
+63-->G:\utilks\pdd\uikit\AndroidManifest.xml:56:13-56
+64            android:windowSoftInputMode="stateHidden|adjustResize" />
+64-->G:\utilks\pdd\uikit\AndroidManifest.xml:57:13-67
+65        <activity
+65-->G:\utilks\pdd\uikit\AndroidManifest.xml:58:9-63:70
+66            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamNicknameActivity"
+66-->G:\utilks\pdd\uikit\AndroidManifest.xml:59:13-101
+67            android:configChanges="keyboardHidden|orientation"
+67-->G:\utilks\pdd\uikit\AndroidManifest.xml:60:13-63
+68            android:screenOrientation="portrait"
+68-->G:\utilks\pdd\uikit\AndroidManifest.xml:61:13-49
+69            android:theme="@style/AppTheme.NoActionBar"
+69-->G:\utilks\pdd\uikit\AndroidManifest.xml:62:13-56
+70            android:windowSoftInputMode="stateHidden|adjustResize" />
+70-->G:\utilks\pdd\uikit\AndroidManifest.xml:63:13-67
+71        <activity
+71-->G:\utilks\pdd\uikit\AndroidManifest.xml:64:9-69:70
+72            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamCreateAnnounceActivity"
+72-->G:\utilks\pdd\uikit\AndroidManifest.xml:65:13-107
+73            android:configChanges="keyboardHidden|orientation"
+73-->G:\utilks\pdd\uikit\AndroidManifest.xml:66:13-63
+74            android:screenOrientation="portrait"
+74-->G:\utilks\pdd\uikit\AndroidManifest.xml:67:13-49
+75            android:theme="@style/AppTheme.NoActionBar"
+75-->G:\utilks\pdd\uikit\AndroidManifest.xml:68:13-56
+76            android:windowSoftInputMode="stateHidden|adjustResize" />
+76-->G:\utilks\pdd\uikit\AndroidManifest.xml:69:13-67
+77        <activity
+77-->G:\utilks\pdd\uikit\AndroidManifest.xml:70:9-75:70
+78            android:name="com.netease.nim.uikit.business.team.activity.TeamPropertySettingActivity"
+78-->G:\utilks\pdd\uikit\AndroidManifest.xml:71:13-100
+79            android:configChanges="keyboardHidden|orientation"
+79-->G:\utilks\pdd\uikit\AndroidManifest.xml:72:13-63
+80            android:screenOrientation="portrait"
+80-->G:\utilks\pdd\uikit\AndroidManifest.xml:73:13-49
+81            android:theme="@style/AppTheme.NoActionBar"
+81-->G:\utilks\pdd\uikit\AndroidManifest.xml:74:13-56
+82            android:windowSoftInputMode="stateHidden|adjustResize" />
+82-->G:\utilks\pdd\uikit\AndroidManifest.xml:75:13-67
+83
+84        <!-- 联系人选择器 -->
+85        <activity
+85-->G:\utilks\pdd\uikit\AndroidManifest.xml:78:9-84:67
+86            android:name="com.netease.nim.uikit.business.contact.selector.activity.ContactSelectActivity"
+86-->G:\utilks\pdd\uikit\AndroidManifest.xml:79:13-106
+87            android:configChanges="keyboardHidden|orientation"
+87-->G:\utilks\pdd\uikit\AndroidManifest.xml:80:13-63
+88            android:label="@string/contact_selector"
+88-->G:\utilks\pdd\uikit\AndroidManifest.xml:81:13-53
+89            android:screenOrientation="portrait"
+89-->G:\utilks\pdd\uikit\AndroidManifest.xml:82:13-49
+90            android:theme="@style/AppTheme.NoActionBar"
+90-->G:\utilks\pdd\uikit\AndroidManifest.xml:83:13-56
+91            android:windowSoftInputMode="stateHidden|adjustPan" />
+91-->G:\utilks\pdd\uikit\AndroidManifest.xml:84:13-64
+92
+93        <!-- @ 选择器 -->
+94        <activity
+94-->G:\utilks\pdd\uikit\AndroidManifest.xml:87:9-89:64
+95            android:name="com.netease.nim.uikit.business.ait.selector.AitContactSelectorActivity"
+95-->G:\utilks\pdd\uikit\AndroidManifest.xml:87:19-83
+96            android:screenOrientation="portrait"
+96-->G:\utilks\pdd\uikit\AndroidManifest.xml:88:19-55
+97            android:theme="@style/AppTheme.NoActionBar" />
+97-->G:\utilks\pdd\uikit\AndroidManifest.xml:89:19-62
+98
+99        <!-- 视频 -->
+100        <activity
+100-->G:\utilks\pdd\uikit\AndroidManifest.xml:94:9-99:58
+101            android:name="com.netease.nim.uikit.business.session.activity.CaptureVideoActivity"
+101-->G:\utilks\pdd\uikit\AndroidManifest.xml:95:13-96
+102            android:configChanges="keyboardHidden|orientation"
+102-->G:\utilks\pdd\uikit\AndroidManifest.xml:96:13-63
+103            android:screenOrientation="portrait"
+103-->G:\utilks\pdd\uikit\AndroidManifest.xml:97:13-49
+104            android:theme="@style/AppTheme.NoActionBar"
+104-->G:\utilks\pdd\uikit\AndroidManifest.xml:99:13-56
+105            android:windowSoftInputMode="stateHidden|adjustResize" />
+105-->G:\utilks\pdd\uikit\AndroidManifest.xml:98:13-67
+106        <activity
+106-->G:\utilks\pdd\uikit\AndroidManifest.xml:101:9-105:48
+107            android:name="com.netease.nim.uikit.business.session.activity.WatchVideoActivity"
+107-->G:\utilks\pdd\uikit\AndroidManifest.xml:102:13-94
+108            android:configChanges="keyboardHidden|orientation|screenSize"
+108-->G:\utilks\pdd\uikit\AndroidManifest.xml:103:13-74
+109            android:label="@string/video_play"
+109-->G:\utilks\pdd\uikit\AndroidManifest.xml:104:13-47
+110            android:theme="@style/DarkTheme" />
+110-->G:\utilks\pdd\uikit\AndroidManifest.xml:105:13-45
+111
+112        <!-- 查看大图 -->
+113        <activity
+113-->G:\utilks\pdd\uikit\AndroidManifest.xml:108:9-111:47
+114            android:name="com.netease.nim.uikit.business.session.activity.WatchMessagePictureActivity"
+114-->G:\utilks\pdd\uikit\AndroidManifest.xml:109:13-103
+115            android:configChanges="keyboardHidden"
+115-->G:\utilks\pdd\uikit\AndroidManifest.xml:110:13-51
+116            android:theme="@style/DarkTheme" />
+116-->G:\utilks\pdd\uikit\AndroidManifest.xml:111:13-45
+117        <activity
+117-->G:\utilks\pdd\uikit\AndroidManifest.xml:113:9-115:47
+118            android:name="com.netease.nim.uikit.business.session.activity.WatchPicAndVideoMenuActivity"
+118-->G:\utilks\pdd\uikit\AndroidManifest.xml:113:19-89
+119            android:configChanges="keyboardHidden"
+119-->G:\utilks\pdd\uikit\AndroidManifest.xml:114:13-51
+120            android:theme="@style/DarkTheme" />
+120-->G:\utilks\pdd\uikit\AndroidManifest.xml:115:13-45
+121        <!-- 照片选择 -->
+122        <provider
+122-->G:\utilks\pdd\uikit\AndroidManifest.xml:117:9-125:20
+123            android:name="com.netease.nim.uikit.common.media.model.GenericFileProvider"
+123-->G:\utilks\pdd\uikit\AndroidManifest.xml:118:13-88
+124            android:authorities="dollar_openBracket_applicationId_closeBracket.generic.file.provider"
+124-->G:\utilks\pdd\uikit\AndroidManifest.xml:119:13-73
+125            android:exported="false"
+125-->G:\utilks\pdd\uikit\AndroidManifest.xml:120:13-37
+126            android:grantUriPermissions="true" >
+126-->G:\utilks\pdd\uikit\AndroidManifest.xml:121:13-47
+127            <meta-data
+127-->G:\utilks\pdd\uikit\AndroidManifest.xml:122:13-124:57
+128                android:name="android.support.FILE_PROVIDER_PATHS"
+128-->G:\utilks\pdd\uikit\AndroidManifest.xml:123:17-67
+129                android:resource="@xml/provider_paths" />
+129-->G:\utilks\pdd\uikit\AndroidManifest.xml:124:17-55
+130        </provider>
+131
+132        <activity
+132-->G:\utilks\pdd\uikit\AndroidManifest.xml:128:9-132:52
+133            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImageGridActivity"
+133-->G:\utilks\pdd\uikit\AndroidManifest.xml:129:13-74
+134            android:configChanges="orientation|screenSize"
+134-->G:\utilks\pdd\uikit\AndroidManifest.xml:130:13-59
+135            android:screenOrientation="portrait"
+135-->G:\utilks\pdd\uikit\AndroidManifest.xml:131:13-49
+136            android:theme="@style/LightBaseTheme" />
+136-->G:\utilks\pdd\uikit\AndroidManifest.xml:132:13-50
+137        <activity
+137-->G:\utilks\pdd\uikit\AndroidManifest.xml:134:9-139:69
+138            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImageCropActivity"
+138-->G:\utilks\pdd\uikit\AndroidManifest.xml:135:13-74
+139            android:configChanges="orientation|screenSize"
+139-->G:\utilks\pdd\uikit\AndroidManifest.xml:136:13-59
+140            android:hardwareAccelerated="false"
+140-->G:\utilks\pdd\uikit\AndroidManifest.xml:137:13-48
+141            android:screenOrientation="portrait"
+141-->G:\utilks\pdd\uikit\AndroidManifest.xml:138:13-49
+142            android:theme="@style/ImagePickerTheme.BlackStatusBar" />
+142-->G:\utilks\pdd\uikit\AndroidManifest.xml:139:13-67
+143        <activity
+143-->G:\utilks\pdd\uikit\AndroidManifest.xml:140:9-143:69
+144            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImagePreviewActivity"
+144-->G:\utilks\pdd\uikit\AndroidManifest.xml:141:13-77
+145            android:configChanges="orientation|screenSize"
+145-->G:\utilks\pdd\uikit\AndroidManifest.xml:142:13-59
+146            android:theme="@style/ImagePickerTheme.BlackStatusBar" />
+146-->G:\utilks\pdd\uikit\AndroidManifest.xml:143:13-67
+147        <activity
+147-->G:\utilks\pdd\uikit\AndroidManifest.xml:145:9-148:69
+148            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImagePreviewRetakeActivity"
+148-->G:\utilks\pdd\uikit\AndroidManifest.xml:146:13-83
+149            android:configChanges="orientation|screenSize"
+149-->G:\utilks\pdd\uikit\AndroidManifest.xml:147:13-59
+150            android:theme="@style/ImagePickerTheme.BlackStatusBar" />
+150-->G:\utilks\pdd\uikit\AndroidManifest.xml:148:13-67
+151        <activity
+151-->G:\utilks\pdd\uikit\AndroidManifest.xml:149:9-153:69
+152            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImageTakeActivity"
+152-->G:\utilks\pdd\uikit\AndroidManifest.xml:150:13-74
+153            android:configChanges="orientation|screenSize"
+153-->G:\utilks\pdd\uikit\AndroidManifest.xml:151:13-59
+154            android:screenOrientation="portrait"
+154-->G:\utilks\pdd\uikit\AndroidManifest.xml:152:13-49
+155            android:theme="@style/ImagePickerTheme.BlackStatusBar" />
+155-->G:\utilks\pdd\uikit\AndroidManifest.xml:153:13-67
+156        <activity
+156-->G:\utilks\pdd\uikit\AndroidManifest.xml:154:9-158:48
+157            android:name="com.netease.nim.uikit.common.media.imagepicker.video.GLVideoActivity"
+157-->G:\utilks\pdd\uikit\AndroidManifest.xml:155:13-75
+158            android:configChanges="orientation|screenSize"
+158-->G:\utilks\pdd\uikit\AndroidManifest.xml:156:13-59
+159            android:screenOrientation="portrait"
+159-->G:\utilks\pdd\uikit\AndroidManifest.xml:157:13-49
+160            android:theme="@style/VideoTheme" />
+160-->G:\utilks\pdd\uikit\AndroidManifest.xml:158:13-46
+161        <activity
+161-->G:\utilks\pdd\uikit\AndroidManifest.xml:159:9-163:48
+162            android:name="com.netease.nim.uikit.common.media.imagepicker.video.GLVideoConfirmActivity"
+162-->G:\utilks\pdd\uikit\AndroidManifest.xml:160:13-82
+163            android:configChanges="orientation|screenSize"
+163-->G:\utilks\pdd\uikit\AndroidManifest.xml:161:13-59
+164            android:screenOrientation="portrait"
+164-->G:\utilks\pdd\uikit\AndroidManifest.xml:162:13-49
+165            android:theme="@style/VideoTheme" />
+165-->G:\utilks\pdd\uikit\AndroidManifest.xml:163:13-46
+166        <activity
+166-->G:\utilks\pdd\uikit\AndroidManifest.xml:165:9-168:71
+167            android:name="com.netease.nim.uikit.common.media.imagepicker.camera.CaptureActivity"
+167-->G:\utilks\pdd\uikit\AndroidManifest.xml:166:13-76
+168            android:screenOrientation="portrait"
+168-->G:\utilks\pdd\uikit\AndroidManifest.xml:167:13-49
+169            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+169-->G:\utilks\pdd\uikit\AndroidManifest.xml:168:13-69
+170    </application>
+171
+172</manifest>

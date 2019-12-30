@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.BuyActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="基于Android育儿通系统的设计与实现"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/child_img_chuan"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/banna" />
+        <TextView
+            android:id="@+id/price_chuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="right"
+            android:text="￥3-30"
+            android:textColor="@color/red"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/child_txt_chuan"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="香蕉" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:id="@+id/gwc"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/gm"
+            android:background="@drawable/gwc_addbackground"
+            android:textColor="@color/white"
+            android:text="加入购物车" />
+        <Button
+            android:id="@+id/gm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:background="@drawable/gm_background"
+            android:text="购买" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Activity.MainActivityActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="基于Android育儿通系统的设计与实现"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12">
+        </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_horizontal|center_horizontal"
+        android:layout_weight="0"
+        android:background="@color/colorPrimary"></com.google.android.material.tabs.TabLayout>
+</LinearLayout>

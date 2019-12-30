@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="red">#F6402C</color>
+    <color name="white">#fff</color>
+    <color name="personal_title">#4A4A4A</color>
+    <color name="personal_data">#555</color>
+    <color name="personal_data_hint">#9B9B9B</color>
+    <color name="backgroud_line">#e2e2e2</color>
+    <color name="backgroud_app">#6A1732</color>
+    <color name="black_alpha_60">#99000000</color>
+    <color name="selected_time_text">#57C5E8</color>
+</resources>
